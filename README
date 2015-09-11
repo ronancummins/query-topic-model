@@ -1,0 +1,45 @@
+This set of classes is a lucene implementation of the SPUD retrieval 
+model that appears in "A Polya Urn Document Language Model for 
+Improved Information Retrieval" by Ronan Cummins, Jiaul Hoque Paik, 
+and Yuanhua Lv, and the pseudo-relevance query expansion approach to building 
+"Query Topic Models" in the paper "Improved Query Topic Models via
+Pseudo-Relevant Polya Document Models" by Ronan Cummins.
+
+All of the expansion methods in the paper are implemented here. 
+Hopefully all are implemented correctly. Notifications of bugs welcome. 
+
+
+
+The classes depend on the following publicly available jar files:
+
+lucene-core-5.0.0.jar
+lucene-queryparser-5.0.0.jar
+lucene-analyzers-common-5.0.0.jar
+lucene-queries-5.0.0.jar
+commons-math3-3.3.jar
+jsoup-1.7.3.jar
+
+
+
+The only two classes with main methods are:
+indexing.LuceneTRECIndexer
+searching.QuerySearch
+
+You will need to re-index documents as the contents of the documents 
+are stored in a seperate lucene index. This increases speed of retrieval 
+and expansion. 
+
+All the methods for query expansion are in QueryExpansion.java
+
+
+Copyright © 2015 Ronan Cummins
+This work is free. It comes without any warranty to the extent 
+permitted by applicable law. You can redistribute it and/or modify it 
+under the terms of the Do What The Fuck You Want To Public License, Version 2,
+as published by Sam Hocevar. See http://www.wtfpl.net/ for more details.
+
+
+
+
+
+
